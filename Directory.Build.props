@@ -1,0 +1,6 @@
+<Project>
+  <!-- .NET 8용으로 빌드하지만, .NET 8 런타임이 없고 더 새 버전(.NET 9·10)만 설치된 PC에서도 실행되게 한다. -->
+  <PropertyGroup>
+    <RollForward>Major</RollForward>
+  </PropertyGroup>
+</Project>
