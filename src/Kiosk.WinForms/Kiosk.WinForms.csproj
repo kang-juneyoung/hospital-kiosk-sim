@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <!-- Windows 키오스크 화면. Windows에서만 실행된다(맥·리눅스는 Kiosk.Console로 같은 흐름을 시연). -->
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <UseWindowsForms>true</UseWindowsForms>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <RootNamespace>Kiosk.WinForms</RootNamespace>
+    <AssemblyName>HospitalKiosk</AssemblyName>
+    <ApplicationHighDpiMode>PerMonitorV2</ApplicationHighDpiMode>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Kiosk.Core\Kiosk.Core.csproj" />
+    <ProjectReference Include="..\Kiosk.Data.MySql\Kiosk.Data.MySql.csproj" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,57 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{F53BBFBC-49DB-4F43-A62E-9EA7C3A36381}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kiosk.Core", "src\Kiosk.Core\Kiosk.Core.csproj", "{913B3B61-66E4-4EA0-ADA9-CB1A85067488}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kiosk.Data.MySql", "src\Kiosk.Data.MySql\Kiosk.Data.MySql.csproj", "{0ED67630-61AA-4A42-85AC-AAD4E7EB23C1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kiosk.Console", "src\Kiosk.Console\Kiosk.Console.csproj", "{7871487F-20DD-4BFF-8A6F-D3344F3DC466}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{BCAC7E18-5A53-48C7-886B-20C2F93336D8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kiosk.Core.Tests", "tests\Kiosk.Core.Tests\Kiosk.Core.Tests.csproj", "{24AC332D-F37E-4F55-A119-ACBBD055947E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kiosk.WinForms", "src\Kiosk.WinForms\Kiosk.WinForms.csproj", "{283C7024-8A79-4564-A974-BD83C0AD2B5C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{913B3B61-66E4-4EA0-ADA9-CB1A85067488}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{913B3B61-66E4-4EA0-ADA9-CB1A85067488}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{913B3B61-66E4-4EA0-ADA9-CB1A85067488}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{913B3B61-66E4-4EA0-ADA9-CB1A85067488}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0ED67630-61AA-4A42-85AC-AAD4E7EB23C1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0ED67630-61AA-4A42-85AC-AAD4E7EB23C1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0ED67630-61AA-4A42-85AC-AAD4E7EB23C1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0ED67630-61AA-4A42-85AC-AAD4E7EB23C1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7871487F-20DD-4BFF-8A6F-D3344F3DC466}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7871487F-20DD-4BFF-8A6F-D3344F3DC466}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7871487F-20DD-4BFF-8A6F-D3344F3DC466}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7871487F-20DD-4BFF-8A6F-D3344F3DC466}.Release|Any CPU.Build.0 = Release|Any CPU
+		{283C7024-8A79-4564-A974-BD83C0AD2B5C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{283C7024-8A79-4564-A974-BD83C0AD2B5C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{283C7024-8A79-4564-A974-BD83C0AD2B5C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{283C7024-8A79-4564-A974-BD83C0AD2B5C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{24AC332D-F37E-4F55-A119-ACBBD055947E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{24AC332D-F37E-4F55-A119-ACBBD055947E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{24AC332D-F37E-4F55-A119-ACBBD055947E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{24AC332D-F37E-4F55-A119-ACBBD055947E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{913B3B61-66E4-4EA0-ADA9-CB1A85067488} = {F53BBFBC-49DB-4F43-A62E-9EA7C3A36381}
+		{0ED67630-61AA-4A42-85AC-AAD4E7EB23C1} = {F53BBFBC-49DB-4F43-A62E-9EA7C3A36381}
+		{7871487F-20DD-4BFF-8A6F-D3344F3DC466} = {F53BBFBC-49DB-4F43-A62E-9EA7C3A36381}
+		{283C7024-8A79-4564-A974-BD83C0AD2B5C} = {F53BBFBC-49DB-4F43-A62E-9EA7C3A36381}
+		{24AC332D-F37E-4F55-A119-ACBBD055947E} = {BCAC7E18-5A53-48C7-886B-20C2F93336D8}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,33 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  core:
+    name: Core·테스트·콘솔 시연 (Linux)
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: 8.0.x
+      - name: 단위 테스트
+        run: dotnet test tests/Kiosk.Core.Tests --configuration Release
+      - name: MySQL 저장소 빌드
+        run: dotnet build src/Kiosk.Data.MySql --configuration Release
+      - name: 콘솔 시연 전체 실행
+        run: dotnet run --project src/Kiosk.Console --configuration Release -- all
+
+  windows:
+    name: WinForms 화면 빌드 (Windows)
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: 8.0.x
+      - name: 솔루션 전체 빌드
+        run: dotnet build HospitalKiosk.sln --configuration Release
